@@ -1,13 +1,26 @@
 {
+  "homepage": "https://grandalf6.github.io/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1",
+    "popper.js": "^1.14.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-pose": "^4.0.8",
+    "react-scripts": "2.1.8",
+    "typeit": "^6.0.2",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.28.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -21,5 +34,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "webpack-cli": "^3.2.3"
+  }
 }

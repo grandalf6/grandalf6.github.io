@@ -1,28 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Loader from "./Loader"
+import Main from "./Main"
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	
+	menuClick = () => {		
+		document.getElementById("main").style.display = "none";
+		document.getElementById("menuPop").style.display = "flex";
+	}
+	
+	menuLinkClick = () => {
+		document.getElementById("main").style.display = "block";
+		document.getElementById("menuPop").style.display = "none";
+	}
+	
+	handleTimer = () => {setTimeout(this.showPage, 0)}
+
+	showPage = () => {
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("main").style.display = "block";
+	}
+	
+	render() {
+		return (
+			<div onLoad={this.handleTimer()}>
+				<Loader />
+				
+				<Main
+				/>
+				
+			</div>
+		)
+	}
 }
 
 export default App;

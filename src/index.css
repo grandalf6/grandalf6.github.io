@@ -1,14 +1,245 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	--secondary-color: rgb(0, 86, 179);
+	--border: ;
+	--width-percent: 80%;
+	--width-min: 300px;
+	--width-max: 600px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h2 {
+	text-align: center;
+}
+
+#contact-button {
+	text-transform: lowercase;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+	background-color: var(--light);
+	width: calc(100vw-17px);
+}
+
+.single-project {
+	margin-top: 20vh;
+}
+
+section {
+	margin: 20vh auto 0 auto;
+	padding: 5vmin;
+	max-width: 900px;
+	width: 98%;
+	min-height: 95vh;
+	background-color: white;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+h4 {
+	margin: 0;
+}
+
+#main {
+  display: none;
+  width: 100%;
+}
+
+
+/* menu */
+#menu {
+	margin: 3vw;
+	height: 30px;
+	font-size: 30px;
+	position: fixed;
+	color: yellow;
+	z-index: 2;
+	animation: slide-left 0.125s ease-in-out;
+}
+
+@keyframes slide-left {
+	0% {
+		transform: translateX(-50px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+#menu:hover {
+	color: var(--blue);
+}
+
+#menuPop{
+	z-index: 1;
+	width: 100%;
+	height: 100vh;
+	border: 1px solid yellow;
+	position: absolute;
+	background-color: var(--gray-dark);
+	opacity: 0.95;
+	animation: zoom 0.125s ease-in-out;
+	color: white;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.menu-link {
+	font-size:40px;
+}
+
+/* menu */
+
+.skill-category {
+	margin-top: 20px;
+	padding: 5px;
+	
+}
+
+/* ARROW DOWN */
+
+#arrow-down {
+	margin-top: 3vh;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* ARROW DOWN */
+
+/*header*/
+header {
+	background: radial-gradient(circle, rgb(52,58,64) 0%, rgb(38,41,45) 100%);
+	min-height: 90vh;
+	width: 100%;
+	color: var(--light);
+	border: var(--border);
+}
+
+footer {
+	margin-top: 15px;
+	background: radial-gradient(circle, rgb(52,58,64) 0%, rgb(38,41,45) 100%);
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+#headerContent {
+	border: var(--border);
+	width: var(--width-percent);
+	min-width: var(--width-min);
+	max-width: var(--width-max);
+	margin: 25vh auto 0 auto;
+	text-align: center;
+}
+
+.social-media-icon {
+	margin: 3vw 3vw 0 0;
+	font-size: 30px;
+	color: var(--light);
+	animation: slide-top 0.5s ease-in-out;
+}
+
+.social-media-icon:hover {
+	opacity: 0.8;
+	transform: translateY(-0.5vh);
+}
+
+@keyframes slide-top {
+	0% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+#text-hi {
+	font-size: 7vh;
+	line-height: 100%;	
+}
+
+#text-self-description {
+	font-size: 2.5vh;
+}
+
+#contact-button {
+	background-color: yellow;
+}
+/*header*/
+
+/* loader */
+
+/* loader */
+#loader {
+	background-color: var(--gray-dark);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 3;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid yellow;
+	width: 120px;
+	height: 120px;
+	display: block;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.skillsGrid {
+	margin: auto;
+	width: 90%;
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.skillsGrid i {
+	font-size: 75px;
+	padding: 20px;
+	color: orange;
+}
+
+.animate-bottom {
+  position: relative;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+@media only screen and (max-width: 500px) {
+	
 }
