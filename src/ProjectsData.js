@@ -1,17 +1,33 @@
-import together from "./together.jpg"
 import calculator from "./images/calculator.png"
 import drumMachine from "./images/drumMachine.png"
 import tributePage from "./images/tributePage.png"
 import randomQuoteMachine from "./images/randomQuoteMachine.png"
-
+import weather from "./images/weather.png"
+import pomodoro from "./images/pomodoro.png"
 
 const ProjectsData = [
+{
+		name: "Weather App",
+		file: weather,
+		description: "Project is build with CSS and ReactJS. It uses 15 components, fetch API to receive data from weather service and navigator object to trace user location. When user enters website app is attempting to get user location and waits for his/her permission. Then, relevant button is displayed, and on its click data from API are requested, and user is shown these.",
+		link: "https://grandalf6.github.io/weatherApp/",
+		repo: "https://github.com/grandalf6/weatherApp",
+		linkedin: true
+	},
 	{
 		name: "Calculator",
 		file: calculator,
 		description: "Application created in ReactJS and CSS, and it is build with 7 components. It allows user to perform simple arithmetic operations on the numbers up to 10 digits, displays executed calculation in 2nd line and does not allow user to run, for example: /0 as it is not permitted.",
 		link: "https://grandalf6.github.io/calculator/",
 		repo: "https://github.com/grandalf6/calculator",
+		linkedin: true
+	},
+	{
+		name: "Pomodoro Timer",
+		file: pomodoro,
+		description: "Project is an app build using React.js and external custom stylesheet. JS: build with 10 components including 1 stateful, arrow functions, conditional rendering, handling events, passing props to child components and ternary operations. It allows user to set displayed break and session times, and to start, pause or reset timer, which activates the buzzer.",
+		link: "https://grandalf6.github.io/pomodoro",
+		repo: "https://github.com/grandalf6/pomodoro",
 		linkedin: true
 	},
 	{

@@ -5,7 +5,7 @@ function ArrowDown() {
 		<a href="#skills">
 			<p id="arrow-down">
 				<i 
-				className="fas fa-chevron-down"
+				className="fas fa-caret-down"
 				></i>
 			</p>
 		</a>

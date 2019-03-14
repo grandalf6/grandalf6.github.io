@@ -40,11 +40,6 @@ const skillsData = [
 		color: "rgb(32, 33, 36)"
 	},
 	{
-		skillName: "TypeScript",
-		icon: "fas fa-satellite",
-		color: "rgb(0, 118, 198)"
-	},
-	{
 		skillName: "Semantic UI",
 		icon: "fab fa-stripe-s",
 		color: "rgb(53, 189, 178)"

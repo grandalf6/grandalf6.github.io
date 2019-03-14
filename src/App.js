@@ -14,7 +14,7 @@ class App extends Component {
 		document.getElementById("menuPop").style.display = "none";
 	}
 	
-	handleTimer = () => {setTimeout(this.showPage, 0)}
+	handleTimer = () => {setTimeout(this.showPage, 2000)}
 
 	showPage = () => {
 		document.getElementById("loader").style.display = "none";

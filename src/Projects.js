@@ -10,7 +10,14 @@ function Projects() {
 				<SectionTitle
 					sectionName="Projects"
 				/>
-				{ProjectsData.map(x => <SingleProject name={x.name} file={x.file} description={x.description} link={x.link} repo={x.repo}/>)}
+					{ProjectsData.map(x => <SingleProject
+						name={x.name}
+						file={x.file}
+						description={x.description}
+						link={x.link}
+						repo={x.repo}
+						key={x.name}
+					/>)}
 			</section>
 		</div>
 	)

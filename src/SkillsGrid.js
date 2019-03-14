@@ -10,6 +10,7 @@ function SkillsGrid() {
 					skillName={x.skillName}
 					icon={x.icon}
 					color={x.color}
+					key={x.skillName}
 				/>)}
 			</div>
 		</div>

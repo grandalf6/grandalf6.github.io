@@ -6,7 +6,11 @@ function Navbar(props){
 	return (
 		<ul className="nav justify-content-end">
 			
-			{SocialData.map(x => <SocialIcon link={x.link} icon={x.icon} />)}
+			{SocialData.map(x => <SocialIcon
+				link={x.link}
+				icon={x.icon}
+				key={x.name}
+			/>)}
 			
 		</ul>
 	)

@@ -1,15 +1,18 @@
 import React from "react"
-import together from "./together.jpg"
 
 function SingleProject(props) {
 	return(
-		<div class="single-project card">
-			<img src={props.file} class="card-img-top img-fluid" alt={props.name}/>
-			<div class="card-body">
-				<h4 class="card-title">{props.name}</h4>
-				<p class="card-text">{props.description}</p>
-				<a href={props.link} target="_blank" class="card-link">See it</a>
-				<a href={props.repo} target="_blank"  class="card-link">Repo</a>
+		<div className="single-project card">
+			<a href={props.link} rel="noopener noreferrer" target="_blank">
+				<img src={props.file} className="card-img-top img-fluid" alt={props.name}/>
+			</a>
+			<div className="card-body">
+				<h4 className="card-title">{props.name}</h4>
+				<p className="card-text">{props.description}</p>
+				<div className="project-links-grid">
+					<a href={props.link} rel="noopener noreferrer" target="_blank" className="project-link card-link">See it</a>
+					<a href={props.repo} rel="noopener noreferrer" target="_blank"  className ="project-link card-link">Repo</a>
+				</div>
 			</div>
 		</div>
 	)
