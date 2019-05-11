@@ -1,12 +1,10 @@
-import React from "react"
+import React from "react";
 
-function SkillSingle(props) {
-	return(
-		<div>
-			<i style={{color: props.color}} className={props.icon}></i>
-			<p>{props.skillName}</p>
-		</div>
-	)
-}
+const SkillSingle = ({ data: { color, icon, skillName } }) => (
+  <div>
+    <i style={{ color: color }} className={icon} />
+    <p>{skillName}</p>
+  </div>
+);
 
-export default SkillSingle
+export default SkillSingle;

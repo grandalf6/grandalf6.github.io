@@ -1,20 +1,18 @@
-import React from 'react'
-import ArrowDown from "./ArrowDown"
-import Header from "./Header"
-import Skills from "./Skills"
-import Projects from "./Projects"
-import Footer from "./Footer"
+import React from "react";
+import ArrowDown from "./ArrowDown";
+import Header from "./Header";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import Footer from "./Footer";
 
-function Main(props) {
-	return (
-		<div id="main">
-			<Header />
-			<ArrowDown />
-			<Skills />
-			<Projects />
-			<Footer />
-		</div>
-	)
-}
+const Main = props => (
+  <div id="main">
+    <Header />
+    <ArrowDown />
+    <Skills />
+    <Projects />
+    <Footer />
+  </div>
+);
 
-export default Main
+export default Main;

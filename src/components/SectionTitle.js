@@ -1,9 +1,5 @@
-import React from "react"
+import React from "react";
 
-function SectionTitle(props) {
-	return(
-		<h2>{props.sectionName}</h2>
-	)
-}
+const SectionTitle = ({ sectionName }) => <h2>{sectionName}</h2>;
 
-export default SectionTitle
+export default SectionTitle;

@@ -1,14 +1,12 @@
-import React from 'react'
-import Navbar from "./Navbar"
-import HeaderContent from "./HeaderContent"
+import React from "react";
+import Navbar from "./Navbar";
+import HeaderContent from "./HeaderContent";
 
-function Header(){
-	return (
-		<header>
-			<Navbar />
-			<HeaderContent />
-		</header>
-	)
-}
+const Header = () => (
+  <header>
+    <Navbar />
+    <HeaderContent />
+  </header>
+);
 
-export default Header
+export default Header;
