@@ -1,4 +1,4 @@
-const SocialData = [
+const SOCIAL_DATA = [
   {
     name: "linkedin",
     link: "https://www.linkedin.com/in/presh-rychlewicz",
@@ -17,4 +17,4 @@ const SocialData = [
   }
 ];
 
-export default SocialData;
+export default SOCIAL_DATA;
