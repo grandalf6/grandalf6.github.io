@@ -14,6 +14,7 @@ body {
 	font-family: Verdana;
 	background-color: var(--light);
 	width: calc(100vw-17px);
+	user-select: none;
 }
 
 #main {
@@ -28,6 +29,7 @@ header {
 	width: 100%;
 	color: var(--light);
 	border: var(--border);
+	box-shadow: 0 0 10px black;
 }
 
 #headerContent {
@@ -125,10 +127,9 @@ section {
 	margin: 10vh auto 0 auto;
 	padding: 3vmin;
 	max-width: 900px;
-	width: 98%;
+	width: %;
 	min-height: 90vh;
 	background-color: white;
-	box-shadow: inset 0 0 10px #000000;
 }
 
 .skillsGrid {
@@ -150,6 +151,7 @@ section {
 /*-----------------PROJECTS */
 .single-project {
 	margin-top: 10vh;
+	box-shadow: 0 0 5px #000000;
 }
 
 .single-project:hover {
@@ -178,13 +180,18 @@ h4 {
 	margin: 0;
 }
 
+/* -----------------FOOTER */
+
 footer {
 	margin-top: 15px;
 	background: radial-gradient(circle, rgb(52,58,64) 0%, rgb(38,41,45) 100%);
 	color: white;
 	padding: 10px;
 	text-align: center;
+	box-shadow: 0 0 10px black;
 }
+
+/* -----------------FOOTER */
 
 /*------------------------ menu */
 #menu {
@@ -290,12 +297,25 @@ footer {
 		width: 100vw;
 	}
 	.social-media-icon {
-	font-size: 7vh;
+		font-size: 5vh;
+		color: blue;
 	}
 	section {
-	width: 100%;
+		width: 100%;
 	}
 	.project-link {
-	font-size: 3vh;
+		font-size: 3vh;
+	}
+	header {
+		height: 80vh;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.single-project {
+		box-shadow: none;
+	}
+	section {
+		box-shadow: inset 0 0 10px black;
 	}
 }
