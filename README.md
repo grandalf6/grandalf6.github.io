@@ -9,7 +9,7 @@
 - Material UI
 - Webpack
 - Git
-- Other libraries (typeit)
+- Other libraries (typeit, transition, react pose, popper)
 
 ## TODO
 
