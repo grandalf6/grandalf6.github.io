@@ -1,0 +1,46 @@
+#loader
+  animation: spin 2s linear infinite
+  background-color: var(--gray-dark)
+  border-radius: 50%
+  border-top: 16px solid yellow
+  border: 16px solid #f3f3f3
+  display: block
+  height: 120px
+  height: 150px
+  left: 50%
+  margin: -75px 0 0 -75px
+  position: absolute
+  top: 50%
+  width: 120px
+  width: 150px
+  z-index: 3
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+.animate-bottom
+  animation-duration: 1s
+  animation-name: animatebottom
+  position: relative
+
+@-webkit-keyframes animatebottom
+  from
+    bottom: -100px
+    opacity: 0
+
+  to
+    bottom: 0px
+    opacity: 1
+
+@keyframes animatebottom
+  from
+    bottom: -100px
+    opacity: 0
+
+  to
+    bottom: 0
+    opacity: 1
