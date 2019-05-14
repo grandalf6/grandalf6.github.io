@@ -1,13 +1,10 @@
 import React from 'react'
-import Header from './Header'
-import Main from './Main'
+import Navbar from './navbar/Navbar'
 
 const App = () => (
-  <>
-    <Header />
-    {/*<Main />*/}
-    <br />
-  </>
+  <div>
+    <Navbar />
+  </div>
 )
 
 export default App

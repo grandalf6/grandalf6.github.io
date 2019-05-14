@@ -5,7 +5,7 @@ import HeaderContent from './HeaderContent'
 const Header = () => (
   <header>
     <Navbar />
-    {/*<HeaderContent />*/}
+    <HeaderContent />
   </header>
 )
 
