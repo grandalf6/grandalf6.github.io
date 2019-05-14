@@ -3,7 +3,6 @@ import NavbarItem from './NavbarItem'
 import SOCIAL_MEDIA_NAVBAR from '../../assets/data/SOCIAL_MEDIA_NAVBAR'
 
 const Navbar = () => {
-  const SOCIAL_MEDIA_ITEMS = [1, 2, 3]
   return (
     <nav
       class="navbar is-fixed-top"
