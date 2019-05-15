@@ -10,6 +10,11 @@ const SOCIAL_MEDIA_NAVBAR = [
     icon: 'fab fa-github',
   },
   {
+    name: 'codewars',
+    link: 'https://www.codewars.com/users/grandalf6@gmail.com',
+    icon: 'fas fa-code-branch',
+  },
+  {
     name: 'resume',
     link:
       'https://drive.google.com/file/d/1_hi8Doc-VWZ-bOz-XuDThKwQJWxnU6q9/view?usp=sharing',
