@@ -1,6 +1,6 @@
-import React from "react";
-import ContactButton from "./ContactButton";
-import SelfDescription from "./SelfDescription";
+import React from 'react'
+import ContactButton from './ContactButton'
+import SelfDescription from './SelfDescription'
 
 const HeaderContent = () => (
   <div id="headerContent">
@@ -8,6 +8,6 @@ const HeaderContent = () => (
     <SelfDescription />
     <ContactButton />
   </div>
-);
+)
 
-export default HeaderContent;
+export default HeaderContent
