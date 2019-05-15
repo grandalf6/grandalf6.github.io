@@ -12,7 +12,7 @@ const SOCIAL_MEDIA_NAVBAR = [
   {
     name: 'codewars',
     link: 'https://www.codewars.com/users/grandalf6@gmail.com',
-    icon: 'fas fa-code-branch',
+    icon: 'fas fa-puzzle-piece',
   },
   {
     name: 'resume',
