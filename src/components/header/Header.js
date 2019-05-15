@@ -1,7 +1,8 @@
 import React from 'react'
+import ArrowDown from '../ArrowDown'
 import ButtonForHeader from './ButtonForHeader'
-import TitleForHeader from './TitleForHeader'
 import DescriptionForHeader from './DescriptionForHeader'
+import TitleForHeader from './TitleForHeader'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -29,18 +30,19 @@ const Header = () => {
       <div className="hero is-fullheight-with-navbar">
         <div className="hero-body">
           <div className="container">
-            {ELEMENTS.map((component, index) => (
-              <div key={index} className="level level-item">
-                <ScrollAnimation
-                  animateIn={component.animation}
-                  delay={component.delay}
-                >
-                  {component.name}
-                </ScrollAnimation>
-              </div>
-            ))}
+            {ELEMENTS.map((component, index) => {
+              const {animation, delay, name} = component
+              return (
+                <div key={index} className="level level-item">
+                  <ScrollAnimation animateIn={animation} delay={delay}>
+                    {name}
+                  </ScrollAnimation>
+                </div>
+              )
+            })}
           </div>
         </div>
+        <ArrowDown />
       </div>
     </header>
   )
