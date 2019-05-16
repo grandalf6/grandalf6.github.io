@@ -1,8 +1,17 @@
 import React from 'react'
+import HeroGeneric from './HeroGeneric'
+import SectionTitle from '../generic/SectionTitle'
 
-const SectionGeneric = ({content, name}) => (
+const SectionGeneric = ({contentOfBody, name}) => (
   <div id={name} className="section">
-    {content}
+    <HeroGeneric
+      content={
+        <>
+          <SectionTitle title={name} />
+          <HeroGeneric type="body" content={contentOfBody} />
+        </>
+      }
+    />
   </div>
 )
 

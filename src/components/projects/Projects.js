@@ -3,7 +3,7 @@ import SectionGeneric from '../generic/SectionGeneric'
 
 const Projects = () => (
   <>
-    <SectionGeneric id="First" content={<p>Projects</p>} />
+    <SectionGeneric name="First" content={<p>Projects</p>} />
   </>
 )
 

@@ -4,8 +4,6 @@ import SKILLS_DATA from '../../../assets/data/SKILLS_DATA'
 import TitleGeneric from '../../generic/TitleGeneric'
 import LevelGeneric from '../../generic/LevelGeneric'
 
-import LevelItemGeneric from '../../generic/LevelItemGeneric'
-
 const SectionSkills = ({type}) => (
   <div className="container is-fluid">
     <LevelGeneric
@@ -26,7 +24,7 @@ const SectionSkills = ({type}) => (
           )}
         />,
       ].map((element, index) => (
-        <LevelItemGeneric key={index} content={element} />
+        <LevelGeneric item={true} key={index} content={element} />
       ))}
     />
   </div>

@@ -1,8 +1,8 @@
 import React from 'react'
+import HeroGeneric from '../generic/HeroGeneric'
 import LevelGeneric from '../generic/LevelGeneric'
 import ScrollAnimation from 'react-animate-on-scroll'
 import SectionGeneric from '../generic/SectionGeneric'
-import SectionTitle from '../generic/SectionTitle'
 import SelfDescription from './SelfDescription'
 import Skills from './skills/Skills'
 import TitleGeneric from '../generic/TitleGeneric'
@@ -40,25 +40,20 @@ const About = () => {
   return (
     <SectionGeneric
       name="About"
-      content={
-        <div className="hero is-fullheight-with-navbar">
-          <SectionTitle title="About me" />
-          <div className="hero-body">
-            <div className="container is-fluid">
-              {ELEMENTS.map((element, index) => {
-                const {component, animation} = element
-                return (
-                  <ScrollAnimation
-                    key={index}
-                    animateIn={animation}
-                    animateOut="fadeOut"
-                  >
-                    {component}
-                  </ScrollAnimation>
-                )
-              })}
-            </div>
-          </div>
+      contentOfBody={
+        <div className="container is-fluid">
+          {ELEMENTS.map((element, index) => {
+            const {component, animation} = element
+            return (
+              <ScrollAnimation
+                key={index}
+                animateIn={animation}
+                animateOut="fadeOut"
+              >
+                {component}
+              </ScrollAnimation>
+            )
+          })}
         </div>
       }
     />
