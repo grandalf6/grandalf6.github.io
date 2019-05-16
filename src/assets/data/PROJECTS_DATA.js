@@ -9,7 +9,7 @@ import wikipedia from '../images/wikipedia.png'
 const PROJECTS_DATA = [
   {
     name: 'Wikipedia Viewer',
-
+    stack: ['REACT', 'WEBPACK', 'SASS', 'BOOTSTRAP', 'API'],
     file: wikipedia,
     description:
       'Project is build with React.js, Webpack, Sass, Bootstrap and Fetch API. It allows user to search Wikipedia for any keyword and returns first 10 results including title, snippet, last date edited and word count. There is  warning for empty search, button for random article and initiation of search by Enter press.',
@@ -18,6 +18,7 @@ const PROJECTS_DATA = [
   },
   {
     name: 'Weather App',
+    stack: ['REACT', 'API', 'CSS'],
 
     file: weather,
     description:
@@ -27,6 +28,7 @@ const PROJECTS_DATA = [
   },
   {
     name: 'Calculator',
+    stack: ['REACT', 'CSS'],
     file: calculator,
     description:
       'Application created in ReactJS and CSS, and it is build with 7 components. It allows user to perform simple arithmetic operations on the numbers up to 10 digits, displays executed calculation in 2nd line and does not allow user to run, for example: /0 as it is not permitted.',
@@ -35,6 +37,7 @@ const PROJECTS_DATA = [
   },
   {
     name: 'Pomodoro Timer',
+    stack: ['REACT', 'CSS'],
     file: pomodoro,
     description:
       'Project is an app build using React.js and external custom stylesheet. JS: build with 10 components including 1 stateful, arrow functions, conditional rendering, handling events, passing props to child components and ternary operations. It allows user to set displayed break and session times, and to start, pause or reset timer, which activates the buzzer.',
@@ -43,6 +46,7 @@ const PROJECTS_DATA = [
   },
   {
     name: 'Drum Machine',
+    stack: ['REACT', 'CSS'],
     file: drumMachine,
     description:
       'Application build with React.js and external CSS. It displays 9 buttons, preview area and on/off switch. When switch is on, pressing keyboard key or buttons in app initiates playing assigned to them sounds.',
@@ -51,6 +55,7 @@ const PROJECTS_DATA = [
   },
   {
     name: 'Random Quote Machine',
+    stack: ['HTML', 'CSS', 'BOOTSTRAP'],
     file: randomQuoteMachine,
     description:
       'Simple single page website build with HTML, CSS and Boostrap. It uses responsivness on grid and images. There are also hover effect addes on some elements.',
@@ -59,6 +64,7 @@ const PROJECTS_DATA = [
   },
   {
     name: 'Tribute Page',
+    stack: ['HTML', 'CSS', 'BOOTSTRAP'],
     file: tributePage,
     description:
       'Simple single page website build with HTML, CSS and Boostrap. It uses responsivness on grid and images. There are also hover effect addes on some elements.',
