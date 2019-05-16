@@ -1,7 +1,8 @@
 import React from 'react'
 
-const AwesomeIcon = ({color, icon, size, align}) => (
+const AwesomeIcon = ({color, colorOut, icon, size, align}) => (
   <i
+    style={{color: colorOut}}
     className={
       (size && 'is-size-' + size) +
       ' ' +
