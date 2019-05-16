@@ -1,5 +1,5 @@
 import React from 'react'
-import SingleSkill from '../SingleSkill'
+import SingleSkill from './SingleSkill'
 import SKILLS_DATA from '../../../assets/data/SKILLS_DATA'
 import TitleGeneric from '../../generic/TitleGeneric'
 import LevelGeneric from '../../generic/LevelGeneric'

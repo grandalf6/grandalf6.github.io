@@ -1,7 +1,7 @@
 import React from 'react'
-import AwesomeIcon from '../generic/AwesomeIcon'
-import TextGeneric from '../generic/TextGeneric'
-import LevelItemGeneric from '../generic/LevelItemGeneric'
+import AwesomeIcon from '../../generic/AwesomeIcon'
+import TextGeneric from '../../generic/TextGeneric'
+import LevelItemGeneric from '../../generic/LevelItemGeneric'
 
 const SingleSkill = ({data: {color, icon, skillName}}) => (
   <LevelItemGeneric
