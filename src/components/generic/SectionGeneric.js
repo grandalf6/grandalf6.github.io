@@ -2,13 +2,24 @@ import React from 'react'
 import HeroGeneric from './HeroGeneric'
 import SectionTitle from '../generic/SectionTitle'
 
-const SectionGeneric = ({contentOfBody, name}) => (
-  <div id={name} className="section">
+const SectionGeneric = ({
+  colorOfTitle,
+  colorOfBackground,
+  contentOfBody,
+  contentOfFooter,
+  name,
+}) => (
+  <div
+    style={{backgroundColor: colorOfBackground}}
+    id={name}
+    className="section"
+  >
     <HeroGeneric
       content={
         <>
-          <SectionTitle title={name} />
+          <SectionTitle color={colorOfTitle} title={name} />
           <HeroGeneric type="body" content={contentOfBody} />
+          <HeroGeneric type="foot" content={contentOfFooter} />
         </>
       }
     />

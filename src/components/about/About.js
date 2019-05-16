@@ -40,6 +40,7 @@ const About = () => {
   return (
     <SectionGeneric
       name="About"
+      colorOfTitle="dark"
       contentOfBody={
         <div className="container is-fluid">
           {ELEMENTS.map((element, index) => {
