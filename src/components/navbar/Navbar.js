@@ -1,5 +1,6 @@
 import React from 'react'
 import NavbarItem from './NavbarItem'
+import ScrollAnimation from 'react-animate-on-scroll'
 import SOCIAL_MEDIA_NAVBAR from '../../assets/data/SOCIAL_MEDIA_NAVBAR'
 
 const Navbar = () => (
@@ -10,7 +11,15 @@ const Navbar = () => (
   >
     <div className="navbar-brand">
       {SOCIAL_MEDIA_NAVBAR.map((item, index) => (
-        <NavbarItem data={item} key={index} />
+        <ScrollAnimation
+          animateIn="fadeInDown"
+          animateOnce={true}
+          delay={(index + 1) * 125}
+          key={index}
+          offset={0}
+        >
+          <NavbarItem data={item} />
+        </ScrollAnimation>
       ))}
     </div>
   </nav>
