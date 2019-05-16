@@ -1,19 +1,28 @@
 import React from 'react'
 import CardContent from './CardContent'
 import CardFooter from './CardFooter'
+import IconForProject from './IconForProject'
 import ScreenshootForProject from './ScreenshootForProject'
+import ScrollAnimation from 'react-animate-on-scroll'
 
-const SingleProject = ({data: {description, file, link, name, repo}}) => (
-  <div className="tile is-6 is-parent">
-    <div className="tile is-child">
-      <div className="card">
-        <ScreenshootForProject file={file} />
-        <CardContent description={description} name={name} />
-        <CardFooter link={link} repo={repo} />
-      </div>
+const SingleProject = ({
+  data: {description, file, link, name, repo, stack},
+}) => {
+  return (
+    <div className="tile is-5 is-parent">
+      <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
+        <div className="tile is-child">
+          <div className="card">
+            <ScreenshootForProject file={file} />
+            <CardContent description={description} name={name} />
+            <div />
+            <CardFooter link={link} repo={repo} />
+          </div>
+        </div>
+      </ScrollAnimation>
     </div>
-  </div>
-)
+  )
+}
 
 {
   /*WHAT HAS TO BE INCLUDED
