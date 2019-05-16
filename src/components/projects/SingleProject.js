@@ -1,20 +1,15 @@
 import React from 'react'
-import LevelGeneric from '../generic/LevelGeneric'
+import CardContent from './CardContent'
 import ScreenshootForProject from './ScreenshootForProject'
 
-const SingleProject = () => (
-  <div>
-    <LevelGeneric
-      content={
-        <>
-          <LevelGeneric
-            item={true}
-            content={<div> neineeienieieineieneinineineineineinenie</div>}
-          />
-          <LevelGeneric item={true} content={<ScreenshootForProject />} />
-        </>
-      }
-    />
+const SingleProject = ({data: {file, name}}) => (
+  <div class="tile is-6 is-parent">
+    <div class="tile is-child">
+      <div class="card">
+        <ScreenshootForProject file={file} />
+        <CardContent name={name} />
+      </div>
+    </div>
   </div>
 )
 

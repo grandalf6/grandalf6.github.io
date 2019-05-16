@@ -9,7 +9,7 @@ import wikipedia from '../images/wikipedia.png'
 const PROJECTS_DATA = [
   {
     name: 'Wikipedia Viewer',
-    color: 'red',
+    color: 'hsl(48, 100%, 67%)',
     file: wikipedia,
     description:
       'Project is build with React.js, Webpack, Sass, Bootstrap and Fetch API. It allows user to search Wikipedia for any keyword and returns first 10 results including title, snippet, last date edited and word count. There is  warning for empty search, button for random article and initiation of search by Enter press.',
@@ -19,7 +19,7 @@ const PROJECTS_DATA = [
   },
   {
     name: 'Weather App',
-    color: 'orange',
+    color: 'white-tier',
     file: weather,
     description:
       'Project is build with CSS and ReactJS. It uses 15 components, fetch API to receive data from weather service and navigator object to trace user location. When user enters website app is attempting to get user location and waits for his/her permission. Then, relevant button is displayed, and on its click data from API are requested, and user is shown these.',
