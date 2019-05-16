@@ -9,7 +9,7 @@ const SingleProject = ({
   data: {description, file, link, name, repo, stack},
 }) => {
   return (
-    <div className="tile is-5 is-parent">
+    <div className="tile is-6 is-parent">
       <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
         <div className="tile is-child">
           <div className="card">
