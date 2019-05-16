@@ -1,7 +1,6 @@
 $yellow: yellow
 $green: #58b792
 $blue: #1976d2
-$link: white
 $link-hover: $yellow
 
 @import "bulma"
@@ -15,8 +14,7 @@ html
 hr
   background-color: $grey-lighter
 
-a
-  text-shadow: 0.025rem 0.025rem 0.125rem #000000
+
 
 .section
   min-height: 100vh
@@ -27,3 +25,12 @@ a
 @import ../assets/styles/projects
 
 @import ../assets/styles/bulma-tooltip/index
+
+@media only screen and (max-width: 580px)
+  .section
+    padding-left: 0.5rem
+    padding-right: 0.5rem
+
+  .hero-body
+    padding-left: 0
+    padding-right: 0

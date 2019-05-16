@@ -9,6 +9,7 @@ const Header = () => {
         <TitleGeneric
           type="title"
           color="light"
+          align="centered"
           text="Hi, my name is Presh."
           size={1}
         />

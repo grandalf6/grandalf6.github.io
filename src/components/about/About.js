@@ -11,36 +11,22 @@ const About = () => {
   const ELEMENTS = [
     {
       component: <LevelGeneric content={<SelfDescription />} />,
-      animation: 'fadeInDown',
+      animation: 'fadeInUpBig',
     },
     {
       component: <hr />,
-      animation: 'fadeIn slow delay-1s',
+      animation: 'fadeIn',
     },
     {
       component: <Skills />,
       animation: 'fadeIn slow delay-1s',
-    },
-    {
-      component: <hr />,
-      animation: 'fadeIn slower delay-1s',
-    },
-    {
-      component: (
-        <TitleGeneric
-          align="centered"
-          type="title"
-          text="check out my recent projects below"
-          transformation="uppercase"
-        />
-      ),
-      animation: 'fadeIn slower delay-1s',
     },
   ]
   return (
     <SectionGeneric
       name="About"
       colorOfTitle="dark"
+      colorOfBackground="white"
       contentOfBody={
         <div className="container is-fluid">
           {ELEMENTS.map((element, index) => {
@@ -48,7 +34,8 @@ const About = () => {
             return (
               <ScrollAnimation
                 key={index}
-                animateIn={animation}
+                animateIn="
+                fadeInUpBig"
                 animateOut="fadeOut"
               >
                 {component}
