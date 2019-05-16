@@ -12,11 +12,11 @@ const Navbar = () => (
     <div className="navbar-brand">
       {SOCIAL_MEDIA_NAVBAR.map((item, index) => (
         <ScrollAnimation
-          animateIn="fadeInDown"
+          animateIn="fadeInDown delay-1s"
           animateOnce={true}
           delay={(index + 1) * 125}
           key={index}
-          offset={0}
+          offset={10}
         >
           <NavbarItem data={item} />
         </ScrollAnimation>

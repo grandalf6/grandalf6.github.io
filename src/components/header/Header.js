@@ -42,7 +42,7 @@ const Header = () => {
                 <ScrollAnimation
                   key={index}
                   animateIn={animation}
-                  animateOut="fadeOut"
+                  animateOut="fadeOutUp"
                   delay={delay}
                 >
                   <div key={index} className="level-item">
