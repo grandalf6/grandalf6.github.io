@@ -6,11 +6,7 @@
 
 - React
 - SASS
-- Material UI
+- Bulma
 - Webpack
 - Git
-- Other libraries (typeit, transition, react pose, popper)
-
-## TODO
-
-## Issues to resolve
+- Other libraries (bulma-extensions, typeit, react-animate-on-scroll)
