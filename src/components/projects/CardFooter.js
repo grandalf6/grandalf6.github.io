@@ -2,7 +2,7 @@ import React from 'react'
 import CardFooterItem from './CardFooterItem'
 
 const CardFooter = ({link, repo}) => (
-  <footer class="card-footer">
+  <footer className="card-footer">
     {[
       {
         buttonLink: link,
@@ -12,8 +12,8 @@ const CardFooter = ({link, repo}) => (
         buttonLink: repo,
         buttonName: 'REPOSITORY',
       },
-    ].map((item) => (
-      <CardFooterItem data={item} />
+    ].map((item, index) => (
+      <CardFooterItem key={index} data={item} />
     ))}
   </footer>
 )
