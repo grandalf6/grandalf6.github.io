@@ -13,10 +13,10 @@ const Navbar = () => (
       {SOCIAL_MEDIA_NAVBAR.map((item, index) => (
         <ScrollAnimation
           animateIn="fadeInDown delay-1s"
-          animateOnce={true}
+          animateOut="fadeOutUp slower delay-2s"
           delay={(index + 1) * 125}
           key={index}
-          offset={10}
+          offset={0}
         >
           <NavbarItem data={item} />
         </ScrollAnimation>
