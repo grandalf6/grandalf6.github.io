@@ -45,7 +45,7 @@ const Header = () => {
                   animateOut="fadeOut"
                   delay={delay}
                 >
-                  <div key={index} className="level level-item">
+                  <div key={index} className="level-item">
                     {name}
                   </div>
                 </ScrollAnimation>

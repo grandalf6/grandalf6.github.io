@@ -1,7 +1,11 @@
 import React from 'react'
 
-const LevelGeneric = ({content, mobile}) => (
-  <div className={'level' + ' ' + (mobile && 'is-mobile')}>{content}</div>
+const LevelGeneric = ({content, item, mobile}) => (
+  <div
+    className={(item ? 'level-item' : 'level') + ' ' + (mobile && 'is-mobile')}
+  >
+    {content}
+  </div>
 )
 
 export default LevelGeneric
