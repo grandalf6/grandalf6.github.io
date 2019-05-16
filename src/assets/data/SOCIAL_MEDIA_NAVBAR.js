@@ -1,5 +1,10 @@
 const SOCIAL_MEDIA_NAVBAR = [
   {
+    name: 'grandalf6@gmail.com',
+    link: 'mailto:grandalf6@gmail.com?subject=Contact from Portfolio',
+    icon: 'fas fa-at',
+  },
+  {
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/presh-rychlewicz',
     icon: 'fab fa-linkedin-in',
