@@ -8,6 +8,16 @@ import ScrollAnimation from 'react-animate-on-scroll'
 const SingleProject = ({
   data: {description, file, link, name, repo, stack},
 }) => {
+  const ELE = [
+    {
+      name: 'REACT',
+      icon: 'fas fa-key',
+    },
+    {
+      name: 'CSS',
+      icon: 'fas fa-tick',
+    },
+  ]
   return (
     <div className="tile is-6 is-parent">
       <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
