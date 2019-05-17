@@ -13,3 +13,4 @@
   - bulma-extensions: tooltip
   - typeit
   - react-animate-on-scroll
+  - Animate
