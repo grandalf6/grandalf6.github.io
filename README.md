@@ -9,4 +9,7 @@
 - Bulma
 - Webpack
 - Git
-- Other libraries (bulma-extensions, typeit, react-animate-on-scroll)
+- Other libraries
+  - bulma-extensions: tooltip
+  - typeit
+  - react-animate-on-scroll
