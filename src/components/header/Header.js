@@ -1,6 +1,8 @@
 import React from 'react'
 import ScrollAnimation from 'react-animate-on-scroll'
 import TitleGeneric from '../generic/TitleGeneric'
+import HeroGeneric from '../generic/HeroGeneric'
+import SectionGeneric from '../generic/SectionGeneric'
 
 const Header = () => {
   const ELEMENTS = [
@@ -33,29 +35,28 @@ const Header = () => {
   ]
 
   return (
-    <header id="Header" className="section">
-      <div className="hero is-fullheight-with-navbar">
-        <div className="hero-body">
-          <div className="container">
-            {ELEMENTS.map((component, index) => {
-              const {animation, delay, name} = component
-              return (
-                <ScrollAnimation
-                  key={index}
-                  animateIn={animation}
-                  animateOut="fadeOutUp"
-                  delay={delay}
-                >
-                  <div key={index} className="level-item">
-                    {name}
-                  </div>
-                </ScrollAnimation>
-              )
-            })}
-          </div>
+    <SectionGeneric
+      name="Header"
+      contentOfBody={
+        <div className="container">
+          {ELEMENTS.map((component, index) => {
+            const {animation, delay, name} = component
+            return (
+              <ScrollAnimation
+                key={index}
+                animateIn={animation}
+                animateOut="fadeOutUp"
+                delay={delay}
+              >
+                <div key={index} className="level-item">
+                  {name}
+                </div>
+              </ScrollAnimation>
+            )
+          })}
         </div>
-      </div>
-    </header>
+      }
+    />
   )
 }
 export default Header

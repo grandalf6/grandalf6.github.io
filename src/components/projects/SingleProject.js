@@ -2,6 +2,7 @@ import React from 'react'
 import CardContent from './CardContent'
 import CardFooter from './CardFooter'
 import IconForProject from './IconForProject'
+import LevelGeneric from '../generic/LevelGeneric'
 import ScreenshootForProject from './ScreenshootForProject'
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -19,7 +20,7 @@ const SingleProject = ({
     },
   ]
   return (
-    <div className="tile is-6 is-parent">
+    <div className="tile is-5 is-parent">
       <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
         <div className="tile is-child">
           <div className="card">
