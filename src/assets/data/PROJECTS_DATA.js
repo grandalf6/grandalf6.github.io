@@ -1,5 +1,6 @@
 import calculator from '../images/calculator.png'
 import drumMachine from '../images/drumMachine.png'
+import movies from '../images/movies.png'
 import pomodoro from '../images/pomodoro.png'
 import randomQuoteMachine from '../images/randomQuoteMachine.png'
 import tributePage from '../images/tributePage.png'
@@ -7,6 +8,15 @@ import weather from '../images/weather.png'
 import wikipedia from '../images/wikipedia.png'
 
 const PROJECTS_DATA = [
+  {
+    name: 'Movies Search',
+    stack: ['REACT', 'WEBPACK', 'SASS', 'BOOTSTRAP', 'API'],
+    file: movies,
+    description:
+      'Project is build with React.js, Webpack, Sass, Bulma and Fetch API. It allows user to browse movies from database and displays basic information. Entries are sortable and searchable.',
+    link: 'https://grandalf6.github.io/movies/',
+    repo: 'https://github.com/grandalf6/movies',
+  },
   {
     name: 'Wikipedia Viewer',
     stack: ['REACT', 'WEBPACK', 'SASS', 'BOOTSTRAP', 'API'],
