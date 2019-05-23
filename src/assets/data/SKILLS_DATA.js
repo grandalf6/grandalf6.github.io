@@ -1,12 +1,12 @@
 const SKILLS_DATA = [
   {
-    skillName: 'HTML5',
+    skillName: 'HTML',
     icon: 'fab fa-html5',
     type: 'skills',
     color: 'rgb(240, 80, 48)',
   },
   {
-    skillName: 'CSS3',
+    skillName: 'CSS',
     icon: 'fab fa-css3',
     type: 'skills',
     color: 'rgb(41, 101, 241)',
@@ -42,7 +42,7 @@ const SKILLS_DATA = [
     color: 'rgb(206, 103, 154)',
   },
   {
-    skillName: 'Fetch API',
+    skillName: 'API',
     icon: 'fas fa-database',
     type: 'skills',
     color: 'rgb(254, 187, 0)',
@@ -69,6 +69,12 @@ const SKILLS_DATA = [
     skillName: 'Jest',
     icon: 'fas fa-crown',
     type: 'tools',
+    color: 'rgb(148, 64, 88)',
+  },
+  {
+    skillName: 'Bootstrap',
+    icon: 'fab fa-bootstrap',
+    type: 'other',
     color: 'rgb(148, 64, 88)',
   },
 ]
