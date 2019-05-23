@@ -6938,13 +6938,17 @@ hr {
   background-color: #dbdbdb; }
 
 .section {
-  min-height: 100vh; }
+  min-height: 100vh;
+  z-index: 1; }
 
-header {
+#Footer {
+  min-height: 20rem;
+  background-color: #26282d; }
+
+#Header {
   background: radial-gradient(circle, #343a40 0%, #26292d 100%);
   background-size: 400%;
-  animation: gradient 30s linear 2s infinite alternate;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75); }
+  animation: gradient 30s linear 2s infinite alternate; }
 
 @keyframes gradient {
   0% {
@@ -6965,25 +6969,33 @@ header {
 .navbar i:hover {
   color: yellow; }
 
-div#About.section div.hero.is-fullheight-with-navbar div.hero-body div.container.is-fluid div.animated.fadeInUpBig div.container.is-fluid {
+#About.section .hero.is-fullheight-with-navbar .hero-body .container.is-fluid .animated.fadeInUpBig .container.is-fluid {
   margin-bottom: 2.5rem; }
 
+#About.section {
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.69); }
+
 .section#Projects .hero .hero-body .tile.is-ancestor {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
-.section#Projects .hero .hero-body .tile.is-ancestor .tile.is-6.is-parent .animated.fadeInUp .tile.is-child .card {
-  border-radius: 1rem; }
+.section#Projects .hero .hero-body .tile.is-ancestor .tile.is-5.is-parent .animated.fadeInUp .tile.is-child .card {
+  border-radius: 0.5rem; }
 
-.section#Projects .hero .hero-body .tile.is-ancestor .tile.is-6.is-parent .animated.fadeInUp .tile.is-child .card:hover {
-  transform: translateY(-1.5px);
-  box-shadow: 0px 0px 5px 0.25px black; }
-
-.section#Projects .hero .hero-body .tile.is-ancestor .tile.is-6.is-parent .animated.fadeInUp .tile.is-child .card img {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem; }
+.section#Projects .hero .hero-body .tile.is-ancestor .tile.is-5.is-parent .animated.fadeInUp .tile.is-child .card img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem; }
 
 .section#Projects {
   box-shadow: 0px -5px -5px 0px rgba(0, 0, 0, 0.75); }
+
+@media only screen and (max-width: 580px) {
+  .section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+  .hero-body {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .tooltip {
   overflow: visible;
@@ -7871,12 +7883,4 @@ div#About.section div.hero.is-fullheight-with-navbar div.hero-body div.container
     border-color: transparent transparent transparent rgba(74, 74, 74, 0.9) !important; }
   .is-tooltip-left-fullhd:focus::before, .is-tooltip-left-fullhd:hover::before, .is-tooltip-left-fullhd.is-tooltip-active::before {
     transform: translate(-0.5rem, 50%) !important; } }
-
-@media only screen and (max-width: 580px) {
-  .section {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem; }
-  .hero-body {
-    padding-left: 0;
-    padding-right: 0; } }
 
