@@ -1,12 +1,9 @@
 import React from 'react'
+import ButtonGeneric from '../generic/ButtonGeneric'
 
 const CardFooterItem = ({data: {buttonLink, buttonName}}) => (
-  <a
-    href={buttonLink}
-    className="card-footer-item has-text-weight-bold"
-    target="_blank"
-  >
-    {buttonName}
+  <a href={buttonLink} target="_blank">
+    <ButtonGeneric color="white" text={buttonName} />
   </a>
 )
 

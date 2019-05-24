@@ -1,7 +1,9 @@
 import React from 'react'
+import CardFooter from './CardFooter'
+import Stack from './Stack'
 import TitleGeneric from '../generic/TitleGeneric'
 
-const CardContent = ({description, name}) => (
+const CardContent = ({description, link, name, repo, stack}) => (
   <div className="card-content">
     <div className="media">
       <div className="media-content">
@@ -10,6 +12,8 @@ const CardContent = ({description, name}) => (
     </div>
 
     <div className="content">{description}</div>
+    <Stack stack={stack} />
+    <CardFooter link={link} repo={repo} />
   </div>
 )
 

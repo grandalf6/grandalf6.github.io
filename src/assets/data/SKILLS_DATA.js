@@ -75,7 +75,13 @@ const SKILLS_DATA = [
     skillName: 'Bootstrap',
     icon: 'fab fa-bootstrap',
     type: 'other',
-    color: 'rgb(148, 64, 88)',
+    color: 'rgb(86, 61, 124)',
+  },
+  {
+    skillName: 'Bulma',
+    icon: 'fas fa-bold',
+    type: 'other',
+    color: 'rgb(0, 209, 178)',
   },
 ]
 

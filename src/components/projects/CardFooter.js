@@ -10,7 +10,7 @@ const CardFooter = ({link, repo}) => (
       },
       {
         buttonLink: repo,
-        buttonName: 'REPOSITORY',
+        buttonName: 'REPO',
       },
     ].map((item, index) => (
       <CardFooterItem key={index} data={item} />

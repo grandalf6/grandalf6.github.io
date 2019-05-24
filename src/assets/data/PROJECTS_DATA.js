@@ -10,10 +10,10 @@ import wikipedia from '../images/wikipedia.png'
 const PROJECTS_DATA = [
   {
     name: 'Movies Search',
-    stack: ['REACT', 'WEBPACK', 'SASS', 'BOOTSTRAP', 'API'],
+    stack: ['REACT', 'WEBPACK', 'SASS', 'BULMA', 'API'],
     file: movies,
     description:
-      'Project is build with React.js, Webpack, Sass, Bulma and Fetch API. It allows user to browse movies from database and displays basic information. Entries are sortable and searchable.',
+      'Website fetches movies data by API, which are later on sorted in variety of lists. Entries are searchable and updated in real time.',
     link: 'https://grandalf6.github.io/movies/',
     repo: 'https://github.com/grandalf6/movies',
   },
