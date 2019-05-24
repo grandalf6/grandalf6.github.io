@@ -8,13 +8,6 @@ const SectionSkills = ({type}) => (
   <div className="container is-fluid">
     <LevelGeneric
       content={[
-        <TitleGeneric
-          align="centered"
-          bold="bold"
-          text={type}
-          transformation="uppercase"
-          type="subtitle"
-        />,
         <LevelGeneric
           mobile={true}
           content={SKILLS_DATA.filter((item) => item.type === type).map(
