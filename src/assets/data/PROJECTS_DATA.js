@@ -1,11 +1,11 @@
-import calculator from '../images/calculator.png'
-import drumMachine from '../images/drumMachine.png'
-import movies from '../images/movies.png'
-import pomodoro from '../images/pomodoro.png'
-import randomQuoteMachine from '../images/randomQuoteMachine.png'
-import tributePage from '../images/tributePage.png'
-import weather from '../images/weather.png'
-import wikipedia from '../images/wikipedia.png'
+import calculator from '../images/projects/calculator.png'
+import drumMachine from '../images/projects/drumMachine.png'
+import movies from '../images/projects/movies.png'
+import pomodoro from '../images/projects/pomodoro.png'
+import randomQuoteMachine from '../images/projects/randomQuoteMachine.png'
+import tributePage from '../images/projects/tributePage.png'
+import weather from '../images/projects/weather.png'
+import wikipedia from '../images/projects/wikipedia.png'
 
 const PROJECTS_DATA = [
   {
