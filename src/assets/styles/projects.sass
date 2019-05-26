@@ -6,6 +6,8 @@
 
 #Projects
   box-shadow: 0px -5px -5px 0px rgba(0,0,0,0.75)
+  position: relative
+  padding-bottom: 500px
 
 #Projects .tile.is-ancestor
   flex-wrap: wrap
@@ -32,3 +34,11 @@
 
 #Projects .IconForProject:hover
   transform: translateY(-0.25rem)
+
+#Projects #mountainFooter, #treeFooter
+  position: absolute
+  bottom: 0
+
+#treeFooter
+  right: 10rem
+  z-index: -1
