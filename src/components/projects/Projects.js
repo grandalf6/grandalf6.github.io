@@ -4,6 +4,7 @@ import React from 'react'
 import SectionGeneric from '../generic/SectionGeneric'
 import SingleProject from './SingleProject'
 import tree from '../../assets/images/svg/tree.svg'
+import SvgFooter from './SvgFooter'
 
 const Projects = () => (
   <SectionGeneric
@@ -16,12 +17,7 @@ const Projects = () => (
             <SingleProject key={project.file} data={project} />
           ))}
         </div>
-        <img
-          id="mountainFooter"
-          src={mountain}
-          alt="mountain picture yellow outline"
-        />
-        <img id="treeFooter" src={tree} alt="tree picture yellow outline" />
+        <SvgFooter />
       </>
     }
   />
