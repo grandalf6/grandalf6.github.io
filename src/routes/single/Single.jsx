@@ -4,37 +4,49 @@ import PageHeader from 'routes/single/pageHeader/PageHeader'
 import PageSectionGeneric from 'generics/pageSectionGeneric/PageSectionGeneric'
 import React from 'react'
 import SkillsContent from './skills/SkillsContent'
+import WorkedWithContent from './workedWith/WorkedWithContent'
+import styled from 'styled-components'
+
+const SingleDiv = styled.div`
+	/* border: 1px solid red; */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	& > *:not(:first-child) > *:last-child {
+		flex-grow: 1;
+	}
+`
 
 const Single = () => {
 	const sectionsArray = [
+		// {
+		// 	pageSectionGenericTitleContent: 'About'
+		// },
+		// {
+		// 	pageSectionGenericTitleContent: 'Skills',
+		// 	pageSectionGenericContent: <SkillsContent />
+		// },
 		{
-			pageSectionGenericTitleContent: 'About',
-			titleColor: dark,
-			background: white
-		},
-		{
-			pageSectionGenericTitleContent: 'Skills',
-			titleColor: dark,
-			background: white,
-			pageSectionGenericContent: <SkillsContent />
+			pageSectionGenericTitleContent: 'Worked with',
+			pageSectionGenericContent: <WorkedWithContent />
 		}
 	]
 
 	return (
-		<div>
+		<SingleDiv>
 			<PageHeader />
-			{sectionsArray.map(
-				({pageSectionGenericContent, pageSectionGenericTitleContent, titleColor, background}, index) => (
-					<PageSectionGeneric
-						key={index}
-						pageSectionGenericTitleContent={pageSectionGenericTitleContent}
-						titleColor={titleColor}
-						background={background}
-						pageSectionGenericContent={pageSectionGenericContent}
-					/>
-				)
-			)}
-		</div>
+			{sectionsArray.map(({pageSectionGenericContent, pageSectionGenericTitleContent}, index) => (
+				<PageSectionGeneric
+					key={index}
+					pageSectionGenericTitleContent={pageSectionGenericTitleContent}
+					titleColor={dark}
+					background={white}
+					pageSectionGenericContent={pageSectionGenericContent}
+				/>
+			))}
+		</SingleDiv>
 	)
 }
 

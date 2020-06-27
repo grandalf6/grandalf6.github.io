@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
+import {l, m, s, xs} from 'styles/breakpoints'
 
 import SkillsContentItemPerspective from './SkillsContentItemPerspective'
 import styled from 'styled-components'
@@ -48,7 +49,7 @@ const SkillsContentItemLi = styled.li`
 	}
 `
 
-const SkillsContentItem = ({skillName, icon, color}) => {
+const SkillsContentItem = ({skillName, icon, color, isRandom}) => {
 	const skillsContentRef = useRef()
 	const [heightToMakeItRect, setHeightToMakeItRect] = useState()
 

@@ -52,9 +52,11 @@ const SkillsContentItemPerspective = ({skillName, icon, color}) => {
 
 	return (
 		<SkillsContentItemPerspectiveDiv color={color}>
-			{sidesArray.map(({id, component}) => {
-				return <div id={id}> {component}</div>
-			})}
+			{sidesArray.map(({id, component}, index) => (
+				<div key={index} id={id}>
+					{component}
+				</div>
+			))}
 		</SkillsContentItemPerspectiveDiv>
 	)
 }
