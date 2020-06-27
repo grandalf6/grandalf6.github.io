@@ -1,4 +1,4 @@
-// import HeroGeneric from 'generic/generic2/HeroGeneric'
+// import HeroGeneric from 'generic/HeroGeneric'
 // import LevelGeneric from 'generic/LevelGeneric'
 
 import React from 'react'
@@ -9,7 +9,6 @@ import colors from 'styles/colors'
 
 // import SelfDescription from './SelfDescription'
 // import Skills from './skills/Skills'
-
 
 const About = () => {
 	const ELEMENTS = [

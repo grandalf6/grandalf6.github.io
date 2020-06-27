@@ -1,4 +1,4 @@
-import AwesomeIcon from 'generic/generic2/AwesomeIcon'
+import AwesomeIcon from 'generic/AwesomeIcon'
 import React from 'react'
 import styled from 'styled-components'
 

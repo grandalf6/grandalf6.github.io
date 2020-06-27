@@ -1,4 +1,4 @@
-import AwesomeIcon from 'generic/generic2/AwesomeIcon'
+import AwesomeIcon from 'generic/AwesomeIcon'
 import React from 'react'
 import SKILLS_DATA from 'assets/data/SKILLS_DATA'
 

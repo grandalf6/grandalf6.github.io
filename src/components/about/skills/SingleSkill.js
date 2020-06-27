@@ -1,4 +1,4 @@
-import AwesomeIcon from 'generic/generic2/AwesomeIcon'
+import AwesomeIcon from 'generic/AwesomeIcon'
 import LevelGeneric from 'generic/LevelGeneric'
 import React from 'react'
 import TextGeneric from 'generic/TextGeneric'
