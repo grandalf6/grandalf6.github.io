@@ -1,5 +1,4 @@
 import React from 'react'
-import colors from 'styles/colors'
 import styled from 'styled-components'
 
 const AwesomeIconI = styled.i`

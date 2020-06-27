@@ -10,6 +10,7 @@ const NavbarNav = styled.nav`
 	flex-direction: row-reverse;
 	position: fixed;
 	width: 100vw;
+	padding-right: 20px;
 
 	& > ul {
 		display: flex;

@@ -1,14 +1,12 @@
-import {dark, white} from 'styles/colors'
-
 import PageHeader from 'routes/single/pageHeader/PageHeader'
 import PageSectionGeneric from 'generics/pageSectionGeneric/PageSectionGeneric'
 import React from 'react'
 import SkillsContent from './skills/SkillsContent'
 import WorkedWithContent from './workedWith/WorkedWithContent'
+import colors from 'styles/colors'
 import styled from 'styled-components'
 
 const SingleDiv = styled.div`
-	/* border: 1px solid red; */
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -24,10 +22,10 @@ const Single = () => {
 		// {
 		// 	pageSectionGenericTitleContent: 'About'
 		// },
-		// {
-		// 	pageSectionGenericTitleContent: 'Skills',
-		// 	pageSectionGenericContent: <SkillsContent />
-		// },
+		{
+			pageSectionGenericTitleContent: 'Skills',
+			pageSectionGenericContent: <SkillsContent />
+		},
 		{
 			pageSectionGenericTitleContent: 'Worked with',
 			pageSectionGenericContent: <WorkedWithContent />
@@ -41,8 +39,8 @@ const Single = () => {
 				<PageSectionGeneric
 					key={index}
 					pageSectionGenericTitleContent={pageSectionGenericTitleContent}
-					titleColor={dark}
-					background={white}
+					titleColor={colors.dark}
+					background={colors.white}
 					pageSectionGenericContent={pageSectionGenericContent}
 				/>
 			))}
