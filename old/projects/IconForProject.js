@@ -1,6 +1,6 @@
-import AwesomeIcon from 'generic/AwesomeIcon'
+import AwesomeIcon from '../old/skills/node_modules/generic/AwesomeIcon'
 import React from 'react'
-import SKILLS_DATA from 'assets/data/SKILLS_DATA'
+import SKILLS_DATA from '../old/SKILLS_DATA'
 
 const IconForProject = ({icon}) => (
 	<div className="IconForProject">

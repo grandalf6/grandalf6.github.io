@@ -1,7 +1,6 @@
 import About from './about/About'
 import Navbar from './navbar/Navbar'
 import PageHero from './pageHero/PageHero'
-import Projects from './projects/Projects'
 import React from 'react'
 import styled from 'styled-components'
 

@@ -1,4 +1,4 @@
-import PROJECTS_DATA from 'assets/data/PROJECTS_DATA'
+import PROJECTS_DATA from '../old/PROJECTS_DATA'
 import React from 'react'
 import SectionGeneric from 'generic/pageSectionGeneric/PageSectionGeneric'
 import SingleProject from './SingleProject'

@@ -1,6 +1,6 @@
 import LevelGeneric from 'generic/LevelGeneric'
 import React from 'react'
-import SKILLS_DATA from 'assets/data/SKILLS_DATA'
+import SKILLS_DATA from '../old/SKILLS_DATA'
 import SingleSkill from './SingleSkill'
 import TitleGeneric from 'generic/TitleGeneric'
 

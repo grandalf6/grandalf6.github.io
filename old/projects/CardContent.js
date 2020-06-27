@@ -1,7 +1,7 @@
 import CardFooter from './CardFooter'
 import React from 'react'
 import Stack from './Stack'
-import TitleGeneric from 'generic/TitleGeneric'
+import TitleGeneric from '../old/skills/node_modules/generic/TitleGeneric'
 
 const CardContent = ({description, link, name, repo, stack}) => (
 	<div className="card-content">

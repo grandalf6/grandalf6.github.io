@@ -1,7 +1,7 @@
-import AwesomeIcon from 'generic/AwesomeIcon'
-import LevelGeneric from 'generic/LevelGeneric'
+import AwesomeIcon from './node_modules/generic/AwesomeIcon'
+import LevelGeneric from './node_modules/generic/LevelGeneric'
 import React from 'react'
-import TextGeneric from 'generic/TextGeneric'
+import TextGeneric from './node_modules/generic/TextGeneric'
 
 const SingleSkill = ({data: {color, icon, skillName}}) => (
 	<LevelGeneric

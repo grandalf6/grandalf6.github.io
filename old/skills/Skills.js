@@ -1,4 +1,4 @@
-import LevelGeneric from 'generic/LevelGeneric'
+import LevelGeneric from './node_modules/generic/LevelGeneric'
 import React from 'react'
 import SectionSkills from './SectionSkills'
 
