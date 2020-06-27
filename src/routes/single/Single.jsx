@@ -1,6 +1,7 @@
 import PageHeader from 'routes/single/pageHeader/PageHeader'
 import PageSectionGeneric from 'generics/pageSectionGeneric/PageSectionGeneric'
 import React from 'react'
+import ServicesContent from './services/ServicesContent'
 import SkillsContent from './skills/SkillsContent'
 import WorkedWithContent from './workedWith/WorkedWithContent'
 import colors from 'styles/colors'
@@ -22,14 +23,18 @@ const Single = () => {
 		// {
 		// 	pageSectionGenericTitleContent: 'About'
 		// },
-		{
-			pageSectionGenericTitleContent: 'Skills',
-			pageSectionGenericContent: <SkillsContent />
-		},
-		{
-			pageSectionGenericTitleContent: 'Worked with',
-			pageSectionGenericContent: <WorkedWithContent />
-		}
+		// {
+		// 	pageSectionGenericTitleContent: 'Skills',
+		// 	pageSectionGenericContent: <SkillsContent />
+		// },
+		// {
+		// 	pageSectionGenericTitleContent: 'Services',
+		// 	pageSectionGenericContent: <ServicesContent />
+		// }
+		// {
+		// 	pageSectionGenericTitleContent: 'Worked with',
+		// 	pageSectionGenericContent: <WorkedWithContent />
+		// }
 	]
 
 	return (
