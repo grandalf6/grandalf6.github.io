@@ -11,20 +11,20 @@ import colors from 'styles/colors'
 // import Skills from './skills/Skills'
 
 const About = () => {
-	const ELEMENTS = [
-		// {
-		// 	component: <LevelGeneric content={<SelfDescription />} />,
-		// 	animation: 'fadeInUpBig'
-		// }
-		// {
-		//   component: <hr />,
-		//   animation: 'fadeIn',
-		// },
-		// {
-		//   component: <Skills />,
-		//   animation: 'fadeIn slow delay-1s',
-		// },
-	]
+	// const ELEMENTS = [
+	// {
+	// 	component: <LevelGeneric content={<SelfDescription />} />,
+	// 	animation: 'fadeInUpBig'
+	// }
+	// {
+	//   component: <hr />,
+	//   animation: 'fadeIn',
+	// },
+	// {
+	//   component: <Skills />,
+	//   animation: 'fadeIn slow delay-1s',
+	// },
+	// ]
 	return (
 		<SectionGeneric
 			pageSectionGenericTitleContent="About"

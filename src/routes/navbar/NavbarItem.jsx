@@ -1,5 +1,6 @@
 import AwesomeIcon from 'generics/AwesomeIcon'
 import React from 'react'
+import colors from 'styles/colors'
 import styled from 'styled-components'
 
 const NavbarItemLi = styled.li`
@@ -11,7 +12,7 @@ const NavbarItemLi = styled.li`
 const NavbarItem = ({icon, link, name}) => (
 	<NavbarItemLi className="navbar-item" data-tooltip={name}>
 		<a href={link} target="_blank">
-			<AwesomeIcon size={'2'} icon={icon} />
+			<AwesomeIcon color color={colors.white} hoverColor={colors.yellow} size={'2'} icon={icon} />
 		</a>
 	</NavbarItemLi>
 )

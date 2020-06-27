@@ -5,16 +5,17 @@ import styled from 'styled-components'
 const AwesomeIconI = styled.i`
 	width: auto;
 	height: ${({height}) => height && height};
-	color: ${colors.white};
+	color: ${({color}) => color && color};
 
 	&:hover {
-		color: ${colors.yellow};
+		color: ${({hoverColor}) => hoverColor && hoverColor};
 	}
 `
 
-const AwesomeIcon = ({color, colorOut, icon, size, align}) => (
+const AwesomeIcon = ({color, hoverColor, icon, size, align}) => (
 	<AwesomeIconI
-		style={{color: colorOut}}
+		color={color}
+		hoverColor={hoverColor}
 		className={
 			icon +
 			(size ? ' fa-' + size + 'x' : '') +

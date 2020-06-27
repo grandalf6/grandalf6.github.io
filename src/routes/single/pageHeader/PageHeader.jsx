@@ -1,4 +1,4 @@
-import HeroGeneric from 'generics/HeroGeneric'
+import HeroGeneric from 'generics/pageHeaderGeneric/HeroGeneric'
 import React from 'react'
 import TypographyGeneric from 'generics/TypographyGeneric'
 import colors from 'styles/colors'
