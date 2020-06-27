@@ -4,16 +4,24 @@ const path = require('path'),
 
 module.exports = {
 	mode: 'development',
-	entry: path.resolve(__dirname, 'src', 'main', 'index.js'),
+	entry: path.resolve(__dirname, 'src', 'main', 'index.jsx'),
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist')
 	},
-
+	resolve: {
+		extensions: ['.js', '.jsx'],
+		alias: {
+			components: path.resolve(__dirname, 'src/components/'),
+			functions: path.resolve(__dirname, 'src/functions/'),
+			state: path.resolve(__dirname, 'src/state/'),
+			styles: path.resolve(__dirname, 'src/styles/')
+		}
+	},
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				loader: 'babel-loader'
 			},
@@ -42,7 +50,6 @@ module.exports = {
 			template: 'src/main/index.html'
 		})
 	],
-
 	devServer: {
 		contentBase: path.resolve(__dirname, 'src', 'main'),
 		historyApiFallback: true,
