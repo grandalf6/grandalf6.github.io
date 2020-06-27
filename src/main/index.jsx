@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 
-import App from 'components/App'
+import App from 'routes/App'
 import GlobalStyle from 'styles/GlobalStyle'
 import {render} from 'react-dom'
 

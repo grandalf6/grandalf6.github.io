@@ -2,7 +2,7 @@
 // import LevelGeneric from 'generic/LevelGeneric'
 
 import React from 'react'
-import SectionGeneric from 'generic/pageSectionGeneric/PageSectionGeneric'
+import SectionGeneric from 'generics/pageSectionGeneric/PageSectionGeneric'
 import colors from 'styles/colors'
 
 // import ScrollAnimation from 'react-animate-on-scroll'

@@ -15,7 +15,8 @@ module.exports = {
 			assets: path.resolve(__dirname, 'src/assets/'),
 			components: path.resolve(__dirname, 'src/components/'),
 			functions: path.resolve(__dirname, 'src/functions/'),
-			generic: path.resolve(__dirname, 'src/components/generic'),
+			generics: path.resolve(__dirname, 'src/generics'),
+			routes: path.resolve(__dirname, 'src/routes/'),
 			states: path.resolve(__dirname, 'src/states/'),
 			styles: path.resolve(__dirname, 'src/styles/')
 		}

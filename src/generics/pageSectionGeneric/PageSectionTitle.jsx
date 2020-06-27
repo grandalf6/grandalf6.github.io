@@ -1,8 +1,7 @@
 import React from 'react'
-import TypographyGeneric from 'generic/TypographyGeneric'
+import TypographyGeneric from 'generics/TypographyGeneric'
 
 // import ScrollAnimation from 'react-animate-on-scroll'
-
 
 const PageSectionTitle = ({pageSectionGenericTitleContent}) => (
 	// <ScrollAnimation animateIn="fadeInLeft" animateOut="bounceOutLeft" offset={65}>

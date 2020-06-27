@@ -1,11 +1,11 @@
-import HeroGeneric from 'generic/HeroGeneric'
+import HeroGeneric from 'generics/HeroGeneric'
 import React from 'react'
-import TypographyGeneric from 'components/generic/TypographyGeneric'
+import TypographyGeneric from 'generics/TypographyGeneric'
 import colors from 'styles/colors'
 
 // import ScrollAnimation from 'react-animate-on-scroll'
 
-const Header = () => {
+const PageHeader = () => {
 	const titlesArray = [
 		{
 			as: 'h1',
@@ -48,4 +48,4 @@ const Header = () => {
 		/>
 	)
 }
-export default Header
+export default PageHeader
