@@ -1,4 +1,4 @@
-import ButtonGeneric from '../generic/ButtonGeneric'
+import ButtonGeneric from 'generic/ButtonGeneric'
 import React from 'react'
 
 const CardFooterItem = ({data: {buttonLink, buttonName}}) => (

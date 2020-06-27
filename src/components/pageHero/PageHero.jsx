@@ -1,8 +1,9 @@
-import HeroGeneric from '../generic/HeroGeneric'
+import HeroGeneric from 'generic/generic2/HeroGeneric'
 import React from 'react'
-import ScrollAnimation from 'react-animate-on-scroll'
 import TypographyGeneric from 'components/generic/TypographyGeneric'
 import colors from 'styles/colors'
+
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 const Header = () => {
 	const titlesArray = [

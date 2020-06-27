@@ -6,14 +6,17 @@ const TypographyGenericSpan = styled.span`
 	text-align: ${({textAlign}) => textAlign && textAlign};
 	color: ${({color}) => color && color};
 	text-transform: ${({textTransform}) => textTransform && textTransform};
+	text-transform: ${({textTransform}) => textTransform && textTransform};
 	margin: ${({margin}) => (margin ? margin : '0')};
+	font-weight: ${({fontWeight}) => (fontWeight ? fontWeight : 'normal')};
 `
 
-const TypographyGeneric = ({textTransform, as, color, margin, content, fontSize, textAlign}) => (
+const TypographyGeneric = ({textTransform, fontWeight, as, color, margin, content, fontSize, textAlign}) => (
 	<TypographyGenericSpan
 		as={as}
 		fontSize={fontSize}
 		textAlign={textAlign}
+		fontWeight={fontWeight}
 		color={color}
 		textTransform={textTransform}
 		margin={margin}

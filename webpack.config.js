@@ -12,9 +12,11 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.jsx'],
 		alias: {
+			assets: path.resolve(__dirname, 'src/assets/'),
 			components: path.resolve(__dirname, 'src/components/'),
 			functions: path.resolve(__dirname, 'src/functions/'),
-			state: path.resolve(__dirname, 'src/state/'),
+			generic: path.resolve(__dirname, 'src/components/generic'),
+			states: path.resolve(__dirname, 'src/states/'),
 			styles: path.resolve(__dirname, 'src/styles/')
 		}
 	},

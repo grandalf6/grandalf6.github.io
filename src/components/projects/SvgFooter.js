@@ -1,6 +1,6 @@
 import React from 'react'
-import mountain from '../../assets/images/svg/mountain.svg'
-import tree from '../../assets/images/svg/tree.svg'
+import mountain from 'assets/images/svg/mountain.svg'
+import tree from 'assets/images/svg/tree.svg'
 
 const SvgFooter = () => (
 	<div id="svgFooter">

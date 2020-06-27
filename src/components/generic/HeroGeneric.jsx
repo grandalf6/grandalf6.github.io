@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 const HeroGenericDiv = styled.div`
 	background: ${({background}) => background && background};
-	width: 100vw;
+	min-width: 100%;
+	max-width: 100%;
 	height: ${({isFullHeight}) => (isFullHeight ? '100vh' : '75vh')};
-	border: 1px solid green;
 	display: flex;
 	align-items: center;
 	justify-content: center;

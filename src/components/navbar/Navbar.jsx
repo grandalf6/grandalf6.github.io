@@ -1,12 +1,11 @@
 import NavbarItem from './NavbarItem'
 import React from 'react'
-import SOCIAL_MEDIA_NAVBAR from '../../assets/data/SOCIAL_MEDIA_NAVBAR'
+import SOCIAL_MEDIA_NAVBAR from 'assets/data/SOCIAL_MEDIA_NAVBAR'
 import styled from 'styled-components'
 
 // import ScrollAnimation from 'react-animate-on-scroll'
 
 const NavbarNav = styled.nav`
-	border: 1px solid red;
 	display: flex;
 	flex-direction: row-reverse;
 	position: fixed;

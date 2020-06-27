@@ -1,17 +1,17 @@
+import AwesomeIcon from 'generic/generic2/AwesomeIcon'
+import LevelGeneric from 'generic/LevelGeneric'
 import React from 'react'
-import AwesomeIcon from '../../generic/AwesomeIcon'
-import TextGeneric from '../../generic/TextGeneric'
-import LevelGeneric from '../../generic/LevelGeneric'
+import TextGeneric from 'generic/TextGeneric'
 
 const SingleSkill = ({data: {color, icon, skillName}}) => (
-  <LevelGeneric
-    item={true}
-    content={
-      <div className="tooltip is-tooltip-bottom" data-tooltip={skillName}>
-        <AwesomeIcon size={1} icon={icon} colorOut={color} />
-      </div>
-    }
-  />
+	<LevelGeneric
+		item={true}
+		content={
+			<div className="tooltip is-tooltip-bottom" data-tooltip={skillName}>
+				<AwesomeIcon size={1} icon={icon} colorOut={color} />
+			</div>
+		}
+	/>
 )
 
 export default SingleSkill

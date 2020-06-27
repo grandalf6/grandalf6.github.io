@@ -10,6 +10,13 @@ body {
   margin: 0;
 }
 
+#root {
+  width: 100vw;
+  max-width: 100%;
+}
+
+
+
 html {
   scroll-behavior: smooth;
   cursor: default;
