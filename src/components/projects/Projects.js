@@ -1,10 +1,10 @@
-import mountain from '../../assets/images/svg/mountain.svg'
 import PROJECTS_DATA from '../../assets/data/PROJECTS_DATA'
 import React from 'react'
 import SectionGeneric from '../generic/SectionGeneric'
 import SingleProject from './SingleProject'
-import tree from '../../assets/images/svg/tree.svg'
 import SvgFooter from './SvgFooter'
+import mountain from '../../assets/images/svg/mountain.svg'
+import tree from '../../assets/images/svg/tree.svg'
 
 const Projects = () => (
   <SectionGeneric

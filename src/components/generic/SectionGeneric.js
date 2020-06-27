@@ -1,7 +1,6 @@
-import React from 'react'
-import HeroGeneric from './HeroGeneric'
-
 import ArrowDown from '../generic/ArrowDown'
+import HeroGeneric from './HeroGeneric'
+import React from 'react'
 import SectionTitle from '../generic/SectionTitle'
 
 const SectionGeneric = ({
