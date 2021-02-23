@@ -1,0 +1,39 @@
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  BUILD:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - run: |
+          npm install
+          npm run build
+      - uses: actions/upload-artifact@v1
+        with:
+          name: buildOutcome
+          path: build
+
+  GIT:
+    needs: [BUILD]
+    runs-on: [ubuntu-latest]
+    steps:
+      - run: git clone https://grandalf6:${{ secrets.TOKEN }}@github.com/grandalf6/grandalf6.github.io.git .
+      - run: git config user.email ${{secrets.EMAIL}}
+      - run: git config user.name ${{secrets.USERNAME}}
+      - run: git checkout master
+      - uses: actions/download-artifact@v1.0.0
+        with:
+          name: buildOutcome
+          path: ./
+      - run: git add .
+      - run: git status
+        id: status
+      - run: git commit -m "CI build"
+        # if: contains(steps.status.outputs, 'Changes to be committed')
+      - run: git push
