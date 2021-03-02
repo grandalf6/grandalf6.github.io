@@ -11,12 +11,11 @@ const theme = {
     "text-color-000": "white",
   },
 
-  dimms: {
-    "page-max-width": "920px",
-
-    "page-padding-horizontal": "30px",
-    "modules-margin-vertical": "40px",
+  space: {
     "modules-margin-vertical-inner": "20px",
+    "modules-margin-vertical": "40px",
+    "page-padding-horizontal": "30px",
+    "page-max-width": "920px",
   },
 };
 

@@ -1,24 +1,25 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Project } from "../assets/projects";
-import Flexbox from "../components/Flexbox";
+import { Project } from "../../assets/projects";
+import Flexbox from "../../components/Flexbox";
+import Features from "./Features";
+import Title from "./Title";
 
 type Props = Pick<Project, "desktopScreenshotSrc">;
 
 const Desktop = ({ desktopScreenshotSrc }: Props) =>
   desktopScreenshotSrc ? (
     <Container flexDirection="column" as="section">
-      {/* <Typography textAlign="center" type="heading3">
-        {cms.desktopVersionLabel}
-      </Typography> */}
+      <Title />
       <DesktopScreenshot src={desktopScreenshotSrc} />
+      {/* <Features /> */}
     </Container>
   ) : null;
 
 const Container = styled(Flexbox)`
  & > *:not(:last-child) {
     margin-bottom: ${({ theme }) =>
-      `calc(1* ${theme.dimms["modules-margin-vertical-inner"]})`}};
+      `calc(1* ${theme.space["modules-margin-vertical-inner"]})`}};
   }
 `;
 

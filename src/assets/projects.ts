@@ -14,7 +14,7 @@ const projects = [
     gridArea: "a",
     imageSrc: "https://webdev-exercise.netlify.com/assets/main-adventure-1.png",
     desktopScreenshotSrc: desktop,
-    mobileScreenshotSrc: desktop,
+    mobileScreenshots: [desktop, desktop, desktop],
     title: "Scandinavian Adventures",
   },
 ];

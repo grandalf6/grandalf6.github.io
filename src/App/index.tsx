@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import Flexbox from "../components/Flexbox";
 import Main from "../Main";
-import Header from "./Header";
+import Header from "./header";
 import { Switch, Route } from "react-router-dom";
 import Project from "../Project";
 import Footer from "./Footer";
@@ -14,9 +14,7 @@ const App = () => (
     minHeight="110vh"
     maxWidth="920px"
     width="100%"
-    // padding="20px"
-    background="white"
-    // border="3px solid green"
+    // background="white"
   >
     <Header />
     <Switch>
@@ -38,7 +36,6 @@ const Container = styled(Flexbox)`
   }
 
   & > * {
-    /* border: 2px solid gray; */
     width: 100%;
   }
 `;

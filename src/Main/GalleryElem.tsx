@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Typography from "../components/Typography";
 import Box from "../components/Box";
 import Flexbox from "../components/Flexbox";
+import Loader from "../components/Loader";
 
 type Props = {
   title: string;
@@ -11,42 +12,40 @@ type Props = {
   imageSrc: string;
 };
 
-const GalleryElem = ({ title, gridArea, imageSrc }: Props) => (
-  <Container
-    to={`/projects/${title.replace(" ", "_")}`}
-    tabIndex={1}
-    gridArea={gridArea}
-  >
-    <Background width="100%" height="100%" position="relative">
-      <Overlay
-        width="inherit"
-        height="inherit"
-        position="absolute"
-        zIndex={1}
-        left={0}
-        top={0}
-      />
-      <Image imageSrc={imageSrc} />
-    </Background>
-    <Flexbox zIndex={2} position="absolute" right="10px" bottom="10px">
-      <Typography
-        as="span"
-        type="tileTitle"
-        textAlign="right"
-        // textTransform="uppercase"
-        children={title}
-      />
-    </Flexbox>
-  </Container>
-);
+const GalleryElem = ({ title, gridArea, imageSrc }: Props) => {
+  const [imageLoaded, setImageLoaded] = React.useState<boolean>(false);
+
+  return (
+    <Container
+      to={`/projects/${title.replace(" ", "_")}`}
+      tabIndex={0}
+      gridArea={gridArea}
+    >
+      <Box display={imageLoaded ? "initial" : "none"}>
+        <Background width="100%" height="100%">
+          <Image src={imageSrc} onLoad={() => setImageLoaded(true)} />
+        </Background>
+        <Flexbox zIndex={2} position="absolute" right="10px" bottom="10px">
+          <Typography
+            as="span"
+            type="tileTitle"
+            textAlign="right"
+            children={title}
+          />
+        </Flexbox>
+      </Box>
+      <Box display={!imageLoaded ? "initial" : "none"}>
+        <GalleryElemLoader />
+      </Box>
+    </Container>
+  );
+};
 
 type ContainerProps = Pick<Props, "gridArea">;
 const Container = styled(Link)<ContainerProps>`
-  background: lightgray;
   cursor: pointer;
   width: 100%;
   height: 100%;
-  // TEMP
   height: 150px;
   grid-area: ${({ gridArea }) => gridArea};
   position: relative;
@@ -66,20 +65,22 @@ const Background = styled(Box)`
   }
 `;
 
-const Overlay = styled(Box)`
-  background: rgba(0, 0, 0, 0);
-  transition: background 1s;
-`;
-
-type ImageProps = Pick<Props, "imageSrc">;
-const Image = styled.div<ImageProps>`
-  background-image: ${({ imageSrc }) => `url(${imageSrc})`};
-  background-position: center;
-  background-size: cover;
-  width: inherit;
-  height: inherit;
+const Image = styled.img`
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
   transform: scale(1.1, 1.1);
   transition: transform 1s;
 `;
 
+const GalleryElemLoader = () => {
+  return (
+    <Loader width={200} height={150} max>
+      <rect x="0" y="0" width="100%" height="150"></rect>
+    </Loader>
+  );
+};
+
+export { GalleryElemLoader };
 export default GalleryElem;
